@@ -4,15 +4,15 @@
 using namespace std;
 void diff()
     {
-     int diff;
+     int sub;
      int n1,n2;
      cout<<"enter two numbers to find their difference:\n\n";
      cout<<"enter first number:";
      cin>>n1;
      cout<<"\nenter second number:";
      cin>>n2;
-     diff=n1-n2;
-     cout<<"\ndifference is:"<<diff<<endl<<endl;
+     sub=n1-n2;
+     cout<<"\ndifference is:"<<sub<<endl;
      }
      
 void pro()
@@ -27,10 +27,10 @@ void pro()
      {
              cout<<"\nenter item "<<i<<":";
              cin>>n;
-             pro*=n;
+             pro=pro*n;
      }
              
-     cout<<"product is:"<<pro<<endl<<endl;    
+     cout<<"product is:"<<pro<<endl;    
      }
        
  void div()
@@ -41,10 +41,10 @@ void pro()
       cout<<"enter 2 numbers to find their quotient\n\n";
       cout<<"enter numerator:";
       cin>>n1;
-      cout<<"\nenter denominator:";
+      cout<<"enter denominator:";
       cin>>n2;
       div=n1/n2;
-      cout<<"\nquotient is:"<<div<<endl<<endl;
+      cout<<"\nquotient is:"<<div<<endl;
       }      
 
 void power()
@@ -59,7 +59,7 @@ void power()
      {
       res=n*res;
      }
-      cout<<n<<"\n power "<<p<<" is :"<<res<<endl;
+      cout<<n<<"power"<<p<<" is :"<<res<<endl;
      } 
        
 void sq()
@@ -68,7 +68,7 @@ void sq()
      int n;
      cout<<"enter number to find its square root:";
      cin>>n;
-     s=sqrt(n);
+     s=n*n;
      cout<<"\nsquare root of "<<n<<" is :"<<s<<endl;
      }
  void fact()
@@ -80,14 +80,14 @@ void sq()
       while(c<=n)
       {
                  f=f*c;
-                 c+=1;
+                 c=c+1;
       }     
                  cout<<"\nfactorial of "<<n<<" is :"<<f<<endl;     
       }
 void expo()
      {
           long double res=1,p; 
-     double e=2.718281828;     
+     double e=2.718;     
      cout<<"enter power of exponential function:";
      cin>>p;
      for(int i=1;i<=p;i++)
@@ -101,7 +101,7 @@ int main()
 {   
    do
     {   
-    cout<<"***which operation you want to perform***\n";
+    cout<<"which operation you want to perform"<<endl;
     cout<<"press 0 for exit\n";
     cout<<"press 1 for addition \n";
     cout<<"press 2 for subtraction\n";
